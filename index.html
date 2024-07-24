@@ -4,17 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Web Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="css_style_sheet" href="css.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
     <header>
-        <h1>Welcome to My Web Page</h1>
+        <h1 class="text-center text-3xl font-bold text-purple-400">TEXT EDITOR</h1>
     </header>
     <main>
         <section>
             <h2>About Me</h2>
             <p>Hello! This is a simple web page to introduce myself. I love coding and creating web pages.</p>
+            <imput id="" class="">    </imput>
+            <div class="flex-justify-center px-2 text-center">
+<!--document.getElementById(id).{style}.<property> = new style-->
+                <Button class="border-2 border-sky-400 px-2" onclick="document.getElementById('writingarea').style.fontWeight='bold'" > bold </Button>
+                <Button class="border-2 border-sky-400 px-2" onclick="document.getElementById('writingarea').style.fontStyle ='italic'">italic</Button>
+                <Button class="border-2 border-sky-400 px-2" onclick="document.getElementById('writingarea').style.textAlign='left'"> left center</Button>
+                <Button class="border-2 border-sky-400 px-2" onclick="document.getElementById('writingarea').style.textAlign='center'">center</Button>
+                <Button class="border-2 border-sky-400 px-2" onclick="document.getElementById('writingarea').style.textAlign='right'">right center</Button>
+                <Button class="border-2 border-sky-400 px-2" onclick="document.getElementById('writingarea').style.textTransform='uppercase'">upper case</Button>
+                <Button class="border-2 border-sky-400 px-2" onclick="document.getElementById('writingarea').style.textTransform='lowercase'">lower case</Button>
+                <Button class="border-2 border-sky-400 px-2" onclick="document.getElementById('writingarea').style.textTransform='capitalize'">caps</Button>
+                <Button class="border-2 border-sky-400 px-2" onclick="document.getElementById('writingarea').value=''" >clean board</Button>
+            </div>
+            <div class="px-20 border-purple-400 border-4 " col="90" rows="20">
+                <!--<input class="border w-full h-full" id="output" type="text">-->
+
+                <textarea name="border-4 border-purple-400 mt-6 w-full mx-auto" id="writingarea" cols="90" rows="20"></textarea>
+            </div>
+            
         </section>
+       <!--  document.getElementById("textarea1").style.fontWeight = "bold"; --> 
         <section>
             <h2>Contact</h2>
             <p>You can reach me at <a href="mailto:example@example.com">example@example.com</a>.</p>
@@ -25,3 +47,26 @@
     </footer>
 </body>
 </html>
+<!-- what are we trying to do ?
+
+--- we are making a text editor like an open sandbox/ or a online code editor in w3schools 
+*** how are we doing that? id we going figure it out ig lmaooo 
+
+1. what did you just do? well its about 9:15 in the moring rn i just added a basic framework made by chat gpt so i dont have to write it out 
+
+2. then i got the text editor script that we are going to have to edit and use to make everthing work **%% they gave the code to us %%**
+
+2A. where are we goign from here? we going to see if it works 
+
+2@. this is what happend. so i checked it the first time and it showed in vilina then i added the correct script for a text bx which is where the 
+text that the user enters is going to be edited 
+2@.     then i added the tailwind and daisy compps so it would be able to show the live compps  *% i addeed the code to the js file instead of <inline>
+
+3.
+
+
+
+
+
+
+-->
