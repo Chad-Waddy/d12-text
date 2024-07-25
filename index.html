@@ -19,8 +19,14 @@
             <imput id="" class="">    </imput>
             <div class="flex-justify-center px-2 text-center">
 <!--document.getElementById(id).{style}.<property> = new style-->
-                <Button class="border-2 border-sky-400 px-2" onclick="document.getElementById('writingarea').style.fontWeight='bold'" > bold </Button>
-                <Button class="border-2 border-sky-400 px-2" onclick="document.getElementById('writingarea').style.fontStyle ='italic'">italic</Button>
+                <Button class="border-2 border-sky-400 px-2" id="btnBold" > bold </Button> 
+                    <script>
+                     button id="btnBold" onclick="clearBold()"
+
+                       document.getElementById("btnBold").addEventListener("click", bold)
+                       function bold() { element.style.fontWeight='bold';}
+                    </script>
+                <Button class="border-2 border-sky-400 px-2" onclick="document.getElementById('writingarea').style.fontStyle ='italic'">italic</Button><!-- last work -->
                 <Button class="border-2 border-sky-400 px-2" onclick="document.getElementById('writingarea').style.textAlign='left'"> left center</Button>
                 <Button class="border-2 border-sky-400 px-2" onclick="document.getElementById('writingarea').style.textAlign='center'">center</Button>
                 <Button class="border-2 border-sky-400 px-2" onclick="document.getElementById('writingarea').style.textAlign='right'">right center</Button>
@@ -67,6 +73,14 @@ text that the user enters is going to be edited
 
 
 
-
+                            ------- TO DO   -----------
+Refer to the previous projects for the js file and call 
+                            put everything in a js file and call variables 
+                            add var to functions and everything else 
+                            1 you also ned to update the uber clone and submit it 
+                            2 finish the 5 pager
+                            3
+                            4
+                            5
 
 -->
