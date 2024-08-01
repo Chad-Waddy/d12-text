@@ -3,33 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Web Page</title>
-    <link rel="css_style_sheet" href="css.css">
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <title>My Web Page</title> 
+
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css">    
 </head>
+
 <body>
     <header>
         <h1 class="text-center text-3xl font-bold text-purple-400">TEXT EDITOR</h1>
     </header>
     <main>
         <section>
-            <h2>About Me</h2>
-            <p>Hello! This is a simple web page to introduce myself. I love coding and creating web pages.</p>
-            <imput id="" class="">    </imput>
-            <div class="flex-justify-center px-2 text-center">
-<!--document.getElementById(id).{style}.<property> = new style-->
-                <Button class="border-2 border-sky-400 px-2" id="btnBold" > bold </Button> 
-                    <script>
-                     button id="btnBold" onclick="clearBold()"
 
-                       document.getElementById("btnBold").addEventListener("click", bold)
-                       function bold() { element.style.fontWeight='bold';}
-                    </script>
-                <Button class="border-2 border-sky-400 px-2" onclick="document.getElementById('writingarea').style.fontStyle ='italic'">italic</Button><!-- last work -->
-                <Button class="border-2 border-sky-400 px-2" onclick="document.getElementById('writingarea').style.textAlign='left'"> left center</Button>
-                <Button class="border-2 border-sky-400 px-2" onclick="document.getElementById('writingarea').style.textAlign='center'">center</Button>
-                <Button class="border-2 border-sky-400 px-2" onclick="document.getElementById('writingarea').style.textAlign='right'">right center</Button>
+
+            <div class="flex-justify-center px-2 text-center">
+                <Button class="border-2 border-sky-400 px-2" onclick='btnBold' > bold </Button> 
+                <button class="border-2 border-sky-400 px-2" id="blue"> blue</button>
+                <Button class="border-2 border-sky-400 px-2" >italic</Button><!-- last work -->
+                <Button class="border-2 border-sky-400 px-2" onclick="document.getElementById('writingarea').style.textAlign='center'"> left</Button>
+                <Button class="border-2 border-sky-400 px-2" id="btnCenter" >center</Button>
+                <Button class="border-2 border-sky-400 px-2" onclick="document.getElementById('writingarea').style.textAlign='right'">right</Button>
                 <Button class="border-2 border-sky-400 px-2" onclick="document.getElementById('writingarea').style.textTransform='uppercase'">upper case</Button>
                 <Button class="border-2 border-sky-400 px-2" onclick="document.getElementById('writingarea').style.textTransform='lowercase'">lower case</Button>
                 <Button class="border-2 border-sky-400 px-2" onclick="document.getElementById('writingarea').style.textTransform='capitalize'">caps</Button>
@@ -51,6 +45,7 @@
     <footer>
         <p>&copy; 2024 My Web Page</p>
     </footer>
+    <script src="app.js"></script>
 </body>
 </html>
 <!-- what are we trying to do ?
